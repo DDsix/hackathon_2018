@@ -13,9 +13,15 @@ class FragmentMyWishlists : Fragment() {
         val view = inflater.inflate(R.layout.fragment_my_wishlists, container, false)
 
 
-        view.customRecommendation1.setProducts("Gadgets", getAllWishlistItems())
-        view.customRecommendation2.setProducts("TVs", getAllWishlistItems())
-        view.customRecommendation3.setProducts("", getAllWishlistItems())
+        getSingleWishlistItems(0).apply {
+            view.customRecommendation1.setProducts(name, products)
+        }
+        getSingleWishlistItems(1).apply {
+            view.customRecommendation2.setProducts(name, products)
+        }
+        getSingleWishlistItems(2).apply {
+            view.customRecommendation3.setProducts(name, products)
+        }
 
         return view
     }

@@ -25,3 +25,59 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+// Define versions in a single place
+ext {
+    // Sdk and tools
+    minSdkVersion = 21
+    targetSdkVersion = 27
+    compileSdkVersion = 27
+
+    // Google repo
+    supportLibVersion = '27.1.1'
+    playServicesLibVersion = '15.0.0'
+    firebaseLibVersion = /* match playServicesLibVersion*/ '15.0.0'
+    supportMultidexVersion = '1.0.1'
+    supportConstraintLayoutVersion = '1.1.2'
+    mapsUtilsVersion = '0.4.4'
+    exoplayerVersion = 'r2.4.0'
+    ktxVersion = '0.2'
+
+    // Third party
+    facebookSdkLibVersion = '4.9.0'
+    crashlyticsSdkLibVersion = '2.8.0'
+    appsFlyerVersion = '4.7.1'
+    leakCanaryVersion = '1.5'
+    glideVersion = '3.7.0'
+    autoValueVersion = '1.2'
+    retrofitVersion = '2.2.0'
+    okhttpVersion = '3.8.0'
+    gsonVersion = '2.4'
+    picassoVersion = '2.5.2'
+    butterknifeVersion = '8.8.1'
+    greenrobotEventBusVersion = '3.0.0'
+    simplecropviewVersion = '1.1.4'
+    circleImageVersion = '2.0.0'
+    lottieVersion = '2.2.0'
+    konfettiVersion = '1.1.0'
+    shimmerLayoutVersion = '2.1.0'
+    threetenabpVersion = '1.1.0'
+    byteunitsVersion = '0.9.1'
+
+    //RX
+    rxJavaVersion = '2.1.14'
+    rxAndroidVersion = '2.0.2'
+    rxKotlinVersion = '2.2.0'
+    rxBindingVersion = '2.1.1'
+
+    // Testing
+    junitVersion = '4.12'
+    mockitoVersion = '1.10.19'
+    powerMockito = '1.6.2'
+    hamcrestVersion = '1.3'
+    runnerVersion = '0.5'
+    rulesVersion = '0.5'
+    espressoVersion = '2.2.2'
+    dexmakerVersion = '1.2'
+    dexmakerMockitoVersion = '1.2'
+}

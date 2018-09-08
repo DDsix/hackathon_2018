@@ -19,7 +19,7 @@ class WishlistListingActivity : AppCompatActivity() {
         setContentView(R.layout.activity_wishlist_listing)
 
         val fragment = FragmentMyWishlists()
-        supportFragmentManager.beginTransaction().add(0, fragment).commit()
+        supportFragmentManager.beginTransaction().add(R.id.container, fragment).commit()
 
         title = "Wishlists"
 

@@ -5,22 +5,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="150dp"
     android:layout_height="250dp"
-    android:layout_margin="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="6dp"
     app:cardBackgroundColor="@color/white"
-    app:cardCornerRadius="4dp">
+    app:cardCornerRadius="2dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="8dp">
+        android:padding="5dp">
 
         <ImageView
             android:id="@+id/ivProductImage"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            tools:background="@color/colorPrimary" />
+            tools:background="@color/colorPrimary"
+            android:layout_marginBottom="2dp"/>
 
         <TextView
             android:id="@+id/tvRecommendationTitle"
@@ -31,7 +35,7 @@
             android:gravity="center"
             android:lines="2"
             android:textColor="@color/emag_black_80"
-            android:textSize="16sp"
+            android:textSize="14sp"
             tools:text="Telefon mobil Samsung S8\na doua linie" />
 
         <ImageView
@@ -44,12 +48,12 @@
             android:id="@+id/tvRecommentationOldPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="2dp"
             android:fontFamily="sans-serif"
             android:gravity="center"
             android:lines="1"
             android:textColor="@color/grey"
-            android:textSize="14sp"
+            android:textSize="12sp"
             tools:text="900 RON" />
 
         <TextView
@@ -60,7 +64,7 @@
             android:gravity="center"
             android:lines="1"
             android:textColor="@color/red"
-            android:textSize="16sp"
+            android:textSize="14sp"
             tools:text="900 RON" />
     </LinearLayout>
 

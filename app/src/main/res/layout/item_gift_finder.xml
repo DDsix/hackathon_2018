@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+    <ImageView
+            android:id="@+id/ivGift"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_gifts"
+            android:layout_margin="8dp"/>
+
+    <TextView
+            android:id="@+id/tvRecommendationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Looking for the perfect gift?"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="18sp"
+            android:textColor="#ef6a63"
+            android:layout_toRightOf="@+id/ivGift"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/tvSeeAllProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/tvRecommendationTitle"
+            android:text="We can help you!\nPick one of the categories from below and we will give you the best recommendations!"
+            android:textColor="@color/grey"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@+id/ivGift"
+            android:textSize="16sp"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvRecommendationProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator"/>
+
+    <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/grey"
+            android:layout_below="@+id/tvSeeAllProducts"
+            android:layout_margin="16dp"/>
+
+
+</RelativeLayout>

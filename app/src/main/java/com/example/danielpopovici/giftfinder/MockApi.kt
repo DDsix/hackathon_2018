@@ -187,3 +187,14 @@ fun getSingleWishlistItems(listId: Int): Wishlist {
         }
     }
 }
+
+fun getCategories() = mutableListOf<Category>().apply {
+    add(Category(0, "Men", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0RDbyj8FfzLMsOq3RSLl_EN7VoF1rC5BojSVtZwQPlhimN9Z"))
+    add(Category(1, "Women", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0RDbyj8FfzLMsOq3RSLl_EN7VoF1rC5BojSVtZwQPlhimN9Z"))
+    add(Category(2, "Teenagers", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0RDbyj8FfzLMsOq3RSLl_EN7VoF1rC5BojSVtZwQPlhimN9Z"))
+    add(Category(3, "Kids 8-12", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0RDbyj8FfzLMsOq3RSLl_EN7VoF1rC5BojSVtZwQPlhimN9Z"))
+    add(Category(4, "Kids 4-7", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0RDbyj8FfzLMsOq3RSLl_EN7VoF1rC5BojSVtZwQPlhimN9Z"))
+    add(Category(5, "Babies", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0RDbyj8FfzLMsOq3RSLl_EN7VoF1rC5BojSVtZwQPlhimN9Z"))
+    add(Category(6, "Men", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0RDbyj8FfzLMsOq3RSLl_EN7VoF1rC5BojSVtZwQPlhimN9Z"))
+
+}

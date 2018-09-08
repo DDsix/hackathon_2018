@@ -1,5 +1,6 @@
 package com.example.danielpopovici.giftfinder
 
+import android.graphics.Paint
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -36,6 +37,11 @@ class AdapterProductRecommendation : RecyclerView.Adapter<AdapterProductRecommen
             Glide.with(itemView.context).load(item.photoUrl).into(itemView.ivProductImage)
             itemView.tvRecommendationTitle.text = item.name
             itemView.tvRecommentationPrice.text = "${item.price} RON"
+            itemView.tvRecommentationOldPrice.apply {
+                paintFlags = paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
+                text = "${item.oldPrice} RON"
+            }
+
         }
     }
 

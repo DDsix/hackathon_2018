@@ -147,7 +147,7 @@ fun getSingleWishlistItems(listId: Int): Wishlist {
                         340.00,
                         365.00))
             }
-            Wishlist(0, "Papuci", items)
+            Wishlist(0, "Shoes", items)
         }
         1 -> {
             val items = mutableListOf<Product>().apply {
@@ -176,7 +176,7 @@ fun getSingleWishlistItems(listId: Int): Wishlist {
                         999.00,
                         1400.00))
             }
-            Wishlist(0, "Electronice", items)
+            Wishlist(0, "Electronics", items)
         }
 
         else -> {
@@ -215,7 +215,7 @@ fun getSingleWishlistItems(listId: Int): Wishlist {
                         370.00))
 
             }
-            Wishlist(0, "Altele", items)
+            Wishlist(0, "Others", items)
         }
     }
 }

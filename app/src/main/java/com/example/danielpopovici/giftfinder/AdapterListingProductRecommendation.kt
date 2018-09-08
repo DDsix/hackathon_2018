@@ -26,7 +26,6 @@ class AdapterListingProductRecommendation : RecyclerView.Adapter<AdapterListingP
         holder.bind(data[position])
     }
 
-
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         init {

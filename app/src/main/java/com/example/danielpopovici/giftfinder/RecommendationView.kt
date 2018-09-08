@@ -34,6 +34,8 @@ class RecommendationView @JvmOverloads constructor(ctx: Context, attrs: Attribut
     fun setProducts(title: String, products: List<Product>) {
         tvRecommendationTitle.text = title
         adapter.setNewData(products)
+        tvSeeAllProducts.setOnClickListener({
+            ProductListingActivity.launch(it.context, products)
+        })
     }
-
 }

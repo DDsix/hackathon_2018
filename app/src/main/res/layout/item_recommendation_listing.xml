@@ -1,87 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginEnd="10dp"
-    android:layout_marginStart="10dp"
-    android:layout_marginTop="10dp"
-    app:cardBackgroundColor="@color/cardview_light_background"
-    app:cardCornerRadius="2dp">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="2dp">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="8dp">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
 
         <ImageView
-            android:id="@+id/ivProductImage"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            tools:background="@color/colorPrimary" />
+                android:id="@+id/ivProductImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                tools:background="@color/colorPrimary"/>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/ivProductImage"
-            android:layout_alignTop="@id/ivProductImage"
-            android:layout_toEndOf="@id/ivProductImage"
-            android:orientation="vertical"
-            android:paddingStart="20dp">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ivProductImage"
+                android:layout_alignTop="@id/ivProductImage"
+                android:layout_toEndOf="@id/ivProductImage"
+                android:orientation="vertical"
+                android:paddingStart="20dp">
 
             <TextView
-                android:id="@+id/tvRecommendationTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ellipsize="end"
-                android:fontFamily="sans-serif"
-                android:lines="2"
-                android:paddingBottom="4dp"
-                android:textColor="@color/emag_black_80"
-                android:textSize="16sp"
-                tools:text="Telefon mobil Samsung S8\na doua linie" />
+                    android:id="@+id/tvRecommendationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:lines="2"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/emag_black_80"
+                    android:textSize="16sp"
+                    tools:text="Telefon mobil Samsung S8\na doua linie"/>
 
             <ImageView
-                android:id="@+id/ivRating"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/stars" />
+                    android:id="@+id/ivRating"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/stars"/>
 
             <TextView
-                android:id="@+id/tvVendor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:text="Vândut de eMAG"
-                android:textSize="12sp" />
+                    android:id="@+id/tvVendor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Vândut de eMAG"
+                    android:textSize="12sp"/>
 
             <TextView
-                android:id="@+id/tvRecommentationOldPrice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:gravity="bottom"
-                android:lines="1"
-                android:paddingBottom="2dp"
-                android:paddingTop="2dp"
-                android:textSize="15sp"
-                tools:text="900 RON" />
+                    android:id="@+id/tvRecommentationOldPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:lines="1"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:textSize="15sp"
+                    tools:text="900 RON"/>
 
             <TextView
-                android:id="@+id/tvRecommentationPrice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:fontFamily="sans-serif-medium"
-                android:foregroundGravity="bottom"
-                android:lines="1"
-                android:textColor="@color/red"
-                android:textSize="17sp"
-                tools:text="900 RON" />
+                    android:id="@+id/tvRecommentationPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="sans-serif-medium"
+                    android:foregroundGravity="bottom"
+                    android:lines="1"
+                    android:textColor="@color/red"
+                    android:textSize="17sp"
+                    tools:text="900 RON"/>
         </LinearLayout>
+
+        <ImageView
+                android:id="@+id/ivAddToCart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_add_to_cart"
+                android:layout_alignBottom="@+id/ivProductImage"
+                android:layout_alignParentEnd="true"/>
     </RelativeLayout>
 
 </android.support.v7.widget.CardView>

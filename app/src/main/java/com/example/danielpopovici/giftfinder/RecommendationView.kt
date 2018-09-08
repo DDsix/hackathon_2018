@@ -8,7 +8,9 @@ import android.view.LayoutInflater
 import android.view.View
 import kotlinx.android.synthetic.main.item_recommentation.view.*
 
-class RecommendationView(ctx: Context, attrs: AttributeSet, defStyleAttr: Int) : CardView(ctx, attrs, defStyleAttr) {
+
+class RecommendationView @JvmOverloads constructor(ctx: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0)
+    : CardView(ctx, attrs, defStyleAttr) {
 
     private lateinit var adapter: AdapterProductRecommendation
 
@@ -27,6 +29,11 @@ class RecommendationView(ctx: Context, attrs: AttributeSet, defStyleAttr: Int) :
         adapter = AdapterProductRecommendation()
         view.rvRecommendationProducts.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         view.rvRecommendationProducts.adapter = adapter
+    }
+
+    fun setProducts(title: String, products: List<Product>) {
+        tvRecommendationTitle.text = title
+        adapter.setNewData(products)
     }
 
 }

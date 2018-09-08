@@ -17,8 +17,8 @@ class WishlistViewPagerAdapter(private val ctx: Context,
     override fun getCount() = 2
 
     override fun getPageTitle(position: Int) = when (position) {
-        0 -> "Listele mele"
-        else -> "Listele prietenilor"
+        0 -> "My wishlists"
+        else -> "My friends wishlists"
     }
 
 }

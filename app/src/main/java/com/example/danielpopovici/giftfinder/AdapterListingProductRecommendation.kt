@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_recommendation_product.view.*
 
-class AdapterProductRecommendation : RecyclerView.Adapter<AdapterProductRecommendation.ViewHolder>() {
+class AdapterListingProductRecommendation : RecyclerView.Adapter<AdapterListingProductRecommendation.ViewHolder>() {
 
     var data: List<Product> = mutableListOf()
 
@@ -17,7 +17,7 @@ class AdapterProductRecommendation : RecyclerView.Adapter<AdapterProductRecommen
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-            ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_recommendation_product, parent, false))
+            ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_recommendation_listing, parent, false))
 
     override fun getItemCount() = data.size
 

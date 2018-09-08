@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
+import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import kotlinx.android.synthetic.main.item_recommendation_listing.view.*
 
 class AdapterListingProductRecommendation : RecyclerView.Adapter<AdapterListingProductRecommendation.ViewHolder>() {
@@ -40,7 +41,8 @@ class AdapterListingProductRecommendation : RecyclerView.Adapter<AdapterListingP
                 paintFlags = paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
                 text = "${item.oldPrice} RON"
             }
-            if (item.deliveryEstimation != null) {
+            if (item.deliveryEstimation != null &&
+                    FirebaseRemoteConfig.getInstance().getBoolean("is_delivery_estimate_enabled")) {
                 itemView.tvDeliveryEstimate.text = item.deliveryEstimation
                 itemView.tvDeliveryEstimate.visibility = View.VISIBLE
             } else {

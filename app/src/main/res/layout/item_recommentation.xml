@@ -1,43 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
 
     <TextView
-            android:id="@+id/tvRecommendationTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Telefoane mobile"
-            android:padding="16dp"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
+        android:id="@+id/tvRecommendationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:padding="12dp"
+        android:textColor="@color/emag_black_80"
+        android:textSize="20sp"
+        tools:text="Telefoane mobile" />
 
     <android.support.v7.widget.RecyclerView
-            android:id="@+id/rvRecommendationProducts"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/rvRecommendationProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <View
-            android:layout_width="match_parent"
-            android:layout_height="0.3dp"
-            android:background="@color/grey"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"/>
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/gray_50" />
 
     <TextView
-            android:id="@+id/tvSeeAllProducts"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="See all products"
-            android:textColor="@color/colorPrimary"
-            android:textAllCaps="true"
-            android:padding="16dp"
-            android:textSize="16sp"
-            android:textStyle="bold"/>
+        android:id="@+id/tvSeeAllProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="See all products"
+        android:textAllCaps="true"
+        android:textColor="@color/emag_blue"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

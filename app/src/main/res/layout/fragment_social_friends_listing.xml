@@ -3,18 +3,13 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
-    <com.example.danielpopovici.giftfinder.GiftFinderView
-            android:id="@+id/customGiftFinderView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"/>
+        android:orientation="vertical"
+        android:paddingTop="8dp">
 
     <android.support.v7.widget.RecyclerView
             android:id="@+id/rvWishlistSocialFriends"
-            android:layout_marginTop="8dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:background="@color/grey"/>
 
 </LinearLayout>

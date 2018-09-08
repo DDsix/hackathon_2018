@@ -7,7 +7,12 @@ import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_wishlist_social_friend.view.*
 
-class WishlistSocialFriendsAdapter : RecyclerView.Adapter<WishlistSocialFriendsAdapter.ViewHolder>() {
+class WishlistSocialFriendsAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+
+    companion object {
+        const val VIEW_TYPE_GIFT_RECOMMENDATION = 0
+        const val VIEW_TYPE_FRIEND_ITEM = 1
+    }
 
     var data: List<SocialFriend>
 
@@ -20,14 +25,27 @@ class WishlistSocialFriendsAdapter : RecyclerView.Adapter<WishlistSocialFriendsA
         notifyDataSetChanged()
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-            ViewHolder(LayoutInflater.from(parent.context)
-                    .inflate(R.layout.item_wishlist_social_friend, parent, false))
+    override fun getItemViewType(position: Int) = when (position) {
+        0 -> VIEW_TYPE_GIFT_RECOMMENDATION
+        else -> VIEW_TYPE_FRIEND_ITEM
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = when (viewType) {
+        VIEW_TYPE_GIFT_RECOMMENDATION -> GiftRecommendationViewHolder(LayoutInflater.from(parent.context)
+                .inflate(R.layout.item_wishlist_gift_recommendation, parent, false))
+        else -> ViewHolder(LayoutInflater.from(parent.context)
+                .inflate(R.layout.item_wishlist_social_friend, parent, false))
+    }
+
 
     override fun getItemCount() = data.size
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(data[position])
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+        when (holder) {
+            is ViewHolder -> holder.bind(data[position])
+            is GiftRecommendationViewHolder -> {
+            }
+        }
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -43,5 +61,7 @@ class WishlistSocialFriendsAdapter : RecyclerView.Adapter<WishlistSocialFriendsA
         }
 
     }
+
+    class GiftRecommendationViewHolder(view: View) : RecyclerView.ViewHolder(view)
 
 }

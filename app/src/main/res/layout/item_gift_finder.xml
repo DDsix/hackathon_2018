@@ -53,6 +53,13 @@
             android:background="@color/grey"
             android:layout_below="@+id/tvSeeAllProducts"
             android:layout_margin="16dp"/>
+    <View
+            android:id="@+id/separator2"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/grey"
+            android:layout_below="@+id/rvRecommendationProducts"
+            android:layout_margin="16dp"/>
 
 
 </RelativeLayout>

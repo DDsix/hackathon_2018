@@ -190,11 +190,10 @@ fun getSingleWishlistItems(listId: Int): Wishlist {
 
 fun getCategories() = mutableListOf<Category>().apply {
     add(Category(0, "Men", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0RDbyj8FfzLMsOq3RSLl_EN7VoF1rC5BojSVtZwQPlhimN9Z"))
-    add(Category(1, "Women", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0RDbyj8FfzLMsOq3RSLl_EN7VoF1rC5BojSVtZwQPlhimN9Z"))
-    add(Category(2, "Teenagers", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0RDbyj8FfzLMsOq3RSLl_EN7VoF1rC5BojSVtZwQPlhimN9Z"))
-    add(Category(3, "Kids 8-12", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0RDbyj8FfzLMsOq3RSLl_EN7VoF1rC5BojSVtZwQPlhimN9Z"))
-    add(Category(4, "Kids 4-7", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0RDbyj8FfzLMsOq3RSLl_EN7VoF1rC5BojSVtZwQPlhimN9Z"))
-    add(Category(5, "Babies", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0RDbyj8FfzLMsOq3RSLl_EN7VoF1rC5BojSVtZwQPlhimN9Z"))
-    add(Category(6, "Men", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0RDbyj8FfzLMsOq3RSLl_EN7VoF1rC5BojSVtZwQPlhimN9Z"))
+    add(Category(1, "Women", "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&h=350"))
+    add(Category(2, "Teenagers", "https://www.lorealparisusa.com/~/media/images/lop/home/beauty-library/articles/the-best-skin-care-routine-for-teen-years-to-early-20s/loreal-paris-bmag-article-a-skin-care-routine-for-teenagers-d.jpg?thn=0"))
+    add(Category(3, "Kids 8-12", "https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_2500,h_1071,f_auto/https://images.ctfassets.net/zzgnkgna3r3g/4aXMljnL72c6MEAASUs8os/9d79ef1847c637177f887f27992d3092/KIDS-JUL18-WESTFIELD-ONLINE-ELEMENTS-V1.jpg"))
+    add(Category(4, "Kids 4-7", "http://dev.actionkids.com/wp-content/uploads/2015/06/actionkidsclass.jpg"))
+    add(Category(5, "Babies", "https://i.ytimg.com/vi/DSnbZUjIyAc/maxresdefault.jpg"))
 
 }

@@ -42,7 +42,7 @@ class WishlistSocialFriendsAdapter : RecyclerView.Adapter<RecyclerView.ViewHolde
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         when (holder) {
-            is ViewHolder -> holder.bind(data[position])
+            is ViewHolder -> holder.bind(data[position], position)
             is GiftRecommendationViewHolder -> {
             }
         }
@@ -50,13 +50,25 @@ class WishlistSocialFriendsAdapter : RecyclerView.Adapter<RecyclerView.ViewHolde
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        fun bind(item: SocialFriend) {
+        fun bind(item: SocialFriend, position: Int) {
             itemView.tvName.text = item.name
             Glide.with(itemView.context).load(item.photoUrl).into(itemView.ivAvatar)
             itemView.tvWishlists.text = "${item.noOfWishlists}  public wishlists"
 
             itemView.setOnClickListener {
                 WishlistListingActivity.launch(it.context)
+            }
+
+            if (position == 1) {
+                itemView.ivAvatarMask.visibility = View.VISIBLE
+                itemView.llBirthdayComingUp.visibility = View.VISIBLE
+
+                itemView.tvSurpriseButton.setOnClickListener {
+
+                }
+            } else {
+                itemView.ivAvatarMask.visibility = View.GONE
+                itemView.llBirthdayComingUp.visibility = View.GONE
             }
         }
 

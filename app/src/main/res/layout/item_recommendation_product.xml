@@ -1,63 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="150dp"
-        android:layout_height="250dp"
-        app:cardCornerRadius="0dp"
-        app:cardBackgroundColor="@color/white"
-        android:layout_margin="4dp">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="250dp"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="4dp">
 
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            tools:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tvRecommendationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:padding="8dp">
+            android:lines="2"
+            android:textColor="@color/emag_black_80"
+            android:textSize="16sp"
+            tools:text="Telefon mobil Samsung S8\na doua linie" />
 
         <ImageView
-                android:id="@+id/ivProductImage"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
-                tools:background="@color/colorPrimary"/>
+            android:id="@+id/ivRating"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stars" />
 
         <TextView
-                android:id="@+id/tvRecommendationTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:lines="2"
-                android:gravity="center"
-                tools:text="Telefon mobil Samsung S8\na doua linie"
-                android:textSize="16sp"/>
-
-        <ImageView
-                android:id="@+id/ivRating"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/stars"/>
+            android:id="@+id/tvRecommentationOldPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            tools:text="900 RON" />
 
         <TextView
-                android:id="@+id/tvRecommentationOldPrice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:lines="1"
-                android:gravity="center"
-                android:textColor="@color/grey"
-                tools:text="900 RON"
-                android:textSize="14sp"/>
-        <TextView
-                android:id="@+id/tvRecommentationPrice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:lines="1"
-                android:gravity="center"
-                android:textColor="@color/red"
-                tools:text="900 RON"
-                android:textSize="16sp"/>
-
+            android:id="@+id/tvRecommentationPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            tools:text="900 RON" />
     </LinearLayout>
 
 </android.support.v7.widget.CardView>

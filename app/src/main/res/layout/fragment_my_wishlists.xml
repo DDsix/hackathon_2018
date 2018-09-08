@@ -12,22 +12,28 @@
         android:orientation="vertical">
 
         <com.example.danielpopovici.giftfinder.RecommendationView
-            android:id="@+id/customRecommendation1"
+            android:id="@+id/customRecommendation0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp" />
+
+        <com.example.danielpopovici.giftfinder.RecommendationView
+            android:id="@+id/customRecommendation1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
 
         <com.example.danielpopovici.giftfinder.RecommendationView
             android:id="@+id/customRecommendation2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="16dp" />
 
         <com.example.danielpopovici.giftfinder.RecommendationView
             android:id="@+id/customRecommendation3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="16dp" />
 
 
     </LinearLayout>

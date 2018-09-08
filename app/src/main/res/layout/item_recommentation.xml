@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingBottom="20dp">
+    android:paddingBottom="8dp">
 
     <TextView
         android:id="@+id/tvRecommendationTitle"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:gravity="center"
-        android:padding="16dp"
+        android:padding="12dp"
         android:text="See all products"
         android:textAllCaps="true"
         android:textColor="@color/emag_blue"

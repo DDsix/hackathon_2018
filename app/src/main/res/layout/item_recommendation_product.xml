@@ -32,6 +32,12 @@
                 tools:text="Telefon mobil Samsung S8\na doua linie"
                 android:textSize="16sp"/>
 
+        <ImageView
+                android:id="@+id/ivRating"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/stars"/>
+
         <TextView
                 android:id="@+id/tvRecommentationOldPrice"
                 android:layout_width="wrap_content"

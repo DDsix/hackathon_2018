@@ -7,4 +7,5 @@ class Product(val id: Int,
               val name: String,
               val photoUrl: String,
               val price: Double,
-              val oldPrice: Double)
+              val oldPrice: Double,
+              val deliveryEstimation: String? = null)

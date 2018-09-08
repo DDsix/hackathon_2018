@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
+import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_products_listing.*
 
 /**
@@ -28,6 +29,9 @@ class ProductListingActivity : AppCompatActivity() {
         setContentView(R.layout.activity_products_listing)
 
         setupProductListing()
+
+        title = "Gift ideas"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     private fun setupProductListing() {
@@ -36,5 +40,13 @@ class ProductListingActivity : AppCompatActivity() {
         rvProducts.layoutManager = LinearLayoutManager(baseContext, LinearLayoutManager.VERTICAL, false)
         rvProducts.adapter = adapter
 
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            super.onBackPressed()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

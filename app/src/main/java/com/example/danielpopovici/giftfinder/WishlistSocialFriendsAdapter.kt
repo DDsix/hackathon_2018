@@ -35,6 +35,7 @@ class WishlistSocialFriendsAdapter : RecyclerView.Adapter<WishlistSocialFriendsA
         fun bind(item: SocialFriend) {
             itemView.tvName.text = item.name
             Glide.with(itemView.context).load(item.photoUrl).into(itemView.ivAvatar)
+            itemView.tvWishlists.text = "${item.noOfWishlists}  liste publice"
         }
 
     }

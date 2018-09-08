@@ -15,8 +15,12 @@ class FragmentSocialFriendsListing : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_social_friends_listing, container, false)
 
-        view.rvWishlistSocialFriends.adapter = friendsAdapter
-        view.rvWishlistSocialFriends.layoutManager = LinearLayoutManager(context)
+        view.rvWishlistSocialFriends.apply {
+            adapter = friendsAdapter
+            layoutManager = LinearLayoutManager(context)
+            addItemDecoration(ItemDecorator(30))
+        }
+
 
         friendsAdapter.setNewData(getFacebookFriends())
         return view

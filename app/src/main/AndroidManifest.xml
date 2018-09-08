@@ -2,23 +2,38 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.danielpopovici.giftfinder">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
-        android:allowBackup="true"
-        android:icon="@drawable/ic_app_round"
-        android:label="@string/app_name"
-        android:roundIcon="@drawable/ic_app_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+            android:allowBackup="true"
+            android:icon="@drawable/ic_app_round"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/ic_app_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
         <activity android:name=".WishlistActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity android:name=".WishlistListingActivity"/>
         <activity android:name=".ProductListingActivity"/>
+
+        <service
+                android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/ic_gifts"/>
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@color/colorAccent"/>
     </application>
+
 
 </manifest>

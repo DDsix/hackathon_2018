@@ -62,7 +62,7 @@
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:lines="1"
-            android:textColor="@color/red"
+            android:textColor="#298eee"
             android:textSize="14sp"
             tools:text="900 RON" />
     </LinearLayout>

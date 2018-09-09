@@ -81,14 +81,6 @@
                 tools:text="900 RON" />
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/ivAddToCart"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignBottom="@+id/ivProductImage"
-            android:layout_alignParentEnd="true"
-            android:src="@drawable/ic_add_to_cart" />
-
         <TextView
             android:id="@+id/tvDeliveryEstimate"
             android:layout_width="match_parent"
